@@ -1,47 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Banana Speak</title>
     <style>
-        textarea{
-            border:2px solid black;
+        textarea {
+            border: 2px solid black;
             width: 50%;
             padding: 1rem;
-            margin: 1rem;
-            display:block;
+            margin-top: 2rem;
+            display: block;
             height: 10vh;
+
+
         }
 
-        #btn-translate{
-            margin:1rem;
-            padding:0.25rem;
+        #btn-translate {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding: 1.5rem;
             font-weight: bold;
-        }
-   
-    #output{
-        border: 2px solid black;
-        height: 10vh;
-        width: 50%;
-        display:block;
-        margin: 1rem;
-        padding: 1rem;
+            background-color: yellow;
+            font-family: 'Kalam', cursive;
 
-    }
-</style>
+        }
+
+        #output {
+            border: 2px solid black;
+            height: 10vh;
+            width: 50%;
+            display: block;
+            margin: 1rem;
+            padding: 2.5rem;
+
+        }
+
+        #title {
+            background-color: yellow;
+            padding: 0.75rem;
+            font-family: 'Kalam', cursive;
+
+            text-align: center;
+        }
+
+        #footer {
+            background-color: yellow;
+
+            text-align: center;
+            display: block;
+        }
+        #outText{
+            padding-right: 30rem;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>This is Banana</h1>
-    <textarea id="txt-input" 
-    placeholder="Enter your text here..."></textarea>
-    <button id="btn-translate">Translate</button>
-    <div style="font-style: bold; font-size: larger;" >The traslated text is::</div>
-    <textarea id="output"></textarea>
+    <div id="title">
+        <h1>talk bananaaa</h1>
+    </div>
+    <div align="center"><textarea id="txt-input" placeholder="Enter your text here..."></textarea>
+        <button id="btn-translate" align="center">Translate To Banana</button></div>
+    <div id="outText" align="center" style="font-style: bold; font-size: larger;font-family: 'Kalam', cursive;">The translated text
+        is 👇</div>
+    <div align="center"> <textarea id="output"></textarea></div>
     <script src="app.js" type="text/javascript"></script>
-    
-       
-    
+    <footer id="footer">
+        <h2>about</h2>
+        <p align="center" style="font-style: bold; font-size: larger; font-family: 'Kalam', cursive;">Are you a fan of
+            minions? Did you know that the gibberish they say is an actual language.
+            Use the translator to convert your text from English to Minion speak or Banana language.</p>
+    </footer>
+
+
+
 </body>
+
 </html>
