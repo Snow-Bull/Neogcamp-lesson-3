@@ -26,6 +26,7 @@
             font-weight: bold;
             background-color: yellow;
             font-family: 'Kalam', cursive;
+            border-radius: 0.85rem;
 
         }
 
@@ -52,9 +53,13 @@
 
             text-align: center;
             display: block;
+            padding-bottom: 0.5rem;
         }
-        #outText{
-            padding-right: 30rem;
+
+        #outText {
+            text-align: center;
+            margin: 1rem;
+
         }
     </style>
 </head>
@@ -65,7 +70,8 @@
     </div>
     <div align="center"><textarea id="txt-input" placeholder="Enter your text here..."></textarea>
         <button id="btn-translate" align="center">Translate To Banana</button></div>
-    <div id="outText" align="center" style="font-style: bold; font-size: larger;font-family: 'Kalam', cursive;">The translated text
+    <div id="outText" align="center" style="font-style: bold; font-size: larger;font-family: 'Kalam', cursive;">The
+        translated text
         is 👇</div>
     <div align="center"> <textarea id="output"></textarea></div>
     <script src="app.js" type="text/javascript"></script>
